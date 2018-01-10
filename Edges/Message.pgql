@@ -1,7 +1,7 @@
 # pho-graphql-v1
 
 type Message implements MentionEdge 
-@nodes(tail:"User, Page", head:"User, Page")
+@nodes(tail:"User", head:"User")
 @properties(binding: false, persistent: true, consumer: false, multiplicable: true)
 @labels(headSingular:"outgoingmessage", headPlural: "outgoingmessages", tailSingular: "incomingmessage", tailPlural: "incomingmessages")
 {

@@ -1,7 +1,7 @@
 # pho-graphql-v1
 
 type Create implements WriteEdge 
-@nodes(head:"Event, Group", tail:"User")
+@nodes(head:"Group", tail:"User")
 @properties(binding: true, persistent: true, consumer: true, formative: true, multiplicable: false)
 @labels(headSingular:"creation", headPlural: "creations", tailSingular: "creator", tailPlural: "creators")
 {

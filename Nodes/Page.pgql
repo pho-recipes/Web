@@ -1,14 +1,15 @@
 # pho-graphql-v1
 
-type Page implements ActorNode 
+type Page implements ObjectNode 
 @edges(
-    in:"User:Follow, StatusUpdate:Mention, Edges:Consume, Edges:Message", 
-    out:"Post, React, Comment, Consume, Message")
+    in:"User:Comment, User:Star, User:Post",
+    out:"Mention"
+)
 @permissions(mod: "0x0f754", mask: "0xfffff") 
 @properties(editable: true, volatile: false, revisionable: false)
 {
     id: ID!,
-    creator: User,
-    join_time: Date! @now,
-    about: String @constraints(maxLength: 255) @default(String: "")
+    creator: User!,
+    create_time: Date! @now
+    url: String!
 }

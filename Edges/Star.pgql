@@ -1,9 +1,9 @@
 # pho-graphql-v1
 
 type React implements SubscribeEdge 
-@nodes(head:"ObjectNode", tail:"User, Page")
+@nodes(head:"Page", tail:"User")
 @properties(binding: false, persistent: true, consumer: true, multiplicable: false)
-@labels(headSingular:"reactee", headPlural: "reactees", tailSingular: "reactor", tailPlural: "reactors")
+@labels(headSingular:"starred", headPlural: "starreds", tailSingular: "starrer", tailPlural: "starrers")
 {
     id: ID!
     type: String! @default(string: "Like")
