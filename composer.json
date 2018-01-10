@@ -1,7 +1,7 @@
 {
-  "name": "pho-recipes/facebook",
+  "name": "pho-recipes/web",
   "type": "project",
-  "description": "A simplified Facebook clone recreated with Pho Networks",
+  "description": "A web site graph in Pho",
   "homepage": "https://phonetworks.org",
   "license": "MIT",
   "authors": [
