@@ -1,0 +1,11 @@
+# pho-graphql-v1
+
+type Photo implements ObjectNode 
+@edges(in:"Edges:Post, Edges:React, Edges:Comment, Edges:Consume")
+@permissions(mod: "0x07500", mask: "0xfffff") # owner can write, friends can read and like (subscribe)
+@properties(expires: 0, editable: false, volatile: false, revisionable: false) 
+{
+    id: ID!,
+    url: String! @constraints(regex: "^https?:.+$"),
+    create_time: Date! @now
+}
