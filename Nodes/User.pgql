@@ -9,7 +9,9 @@ type User implements ActorNode
 @properties(editable: false, volatile: false, revisionable: false)
 {
     id: ID!,
+    username: String! @unique @constraints(regex: "^[a-zA-Z0-9_]{5,15}$"),
     password: String! @md5 @constraints(regex: "^[a-zA-Z0-9_]{4,12}$"),
+    email: String! @unique @constraints(format: "email"),
     join_time: Date! @now
     birthday: Date @default(Int: 411436800),
     about: String @constraints(maxLength: 255,) @default(String: ""),
