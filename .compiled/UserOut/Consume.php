@@ -51,6 +51,6 @@ class ConsumePredicate extends Foundation\ActorOut\ReadPredicate
 /*****************************************************
  * Timestamp: 
  * Size (in bytes): 1349
- * Compilation Time: 52
- * 823fbb2dd0f151e98254c2004c8fcb11
+ * Compilation Time: 48
+ * edd30eaf82493205fe0aab2b208d2048
  ******************************************************/
