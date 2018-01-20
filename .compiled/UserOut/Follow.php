@@ -51,6 +51,6 @@ class FollowPredicate extends Foundation\ActorOut\SubscribePredicate
 /*****************************************************
  * Timestamp: 
  * Size (in bytes): 1289
- * Compilation Time: 78
- * a93768f6a6194e2ad37135d279dac7a1
+ * Compilation Time: 30
+ * e1bd979df0bafe3b6084fe6a19fe9d2b
  ******************************************************/
