@@ -54,6 +54,6 @@ class MentionNotification extends Foundation\ObjectOut\MentionNotification
 /*****************************************************
  * Timestamp: 
  * Size (in bytes): 1378
- * Compilation Time: 78
- * 271b9cd552f04801b72ce5ee82e81392
+ * Compilation Time: 53
+ * df1a37cfb0507c61a489eb945ec93aa3
  ******************************************************/
