@@ -9,7 +9,6 @@ type Page implements ObjectNode
 @properties(editable: true, volatile: false, revisionable: false)
 {
     id: ID!,
-    creator: User!,
     create_time: Date! @now
     url: String!
 }
