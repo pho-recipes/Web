@@ -6,5 +6,4 @@ type Star implements SubscribeEdge
 @labels(headSingular:"starred", headPlural: "starreds", tailSingular: "starrer", tailPlural: "starrers")
 {
     id: ID!
-    type: String! @default(string: "Like")
 }
