@@ -20,8 +20,8 @@ class Comment extends Foundation\ActorOut\Subscribe {
     use PersistentTrait;
     
 
-    const HEAD_LABEL = "comment";
-    const HEAD_LABELS = "comments";
+    const HEAD_LABEL = "commentedPage";
+    const HEAD_LABELS = "commentedPages";
     const TAIL_LABEL = "commenter";
     const TAIL_LABELS = "commenters";
     
@@ -51,7 +51,7 @@ class CommentPredicate extends Foundation\ActorOut\SubscribePredicate
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 1901
- * Compilation Time: 36
- * d5a9ce9b2fadf7607efda02f8230185f
+ * Size (in bytes): 1912
+ * Compilation Time: 6
+ * 95b0bc776353d865f67519be24f5e9ae
  ******************************************************/

@@ -20,8 +20,8 @@ class Create extends Foundation\ActorOut\Write {
     use PersistentTrait;
     
 
-    const HEAD_LABEL = "creation";
-    const HEAD_LABELS = "creations";
+    const HEAD_LABEL = "group";
+    const HEAD_LABELS = "groups";
     const TAIL_LABEL = "creator";
     const TAIL_LABELS = "creators";
     
@@ -53,7 +53,7 @@ class CreateNotification extends Foundation\ActorOut\WriteNotification
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 1351
- * Compilation Time: 49
- * cdd066ea887ecd2d3bbffb44e6c28feb
+ * Size (in bytes): 1344
+ * Compilation Time: 7
+ * 73693769086581677ea5358342180c43
  ******************************************************/
