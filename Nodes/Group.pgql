@@ -8,5 +8,5 @@ type Group implements GraphNode
     id: ID,
     title: String! @constraints(maxLength:80),
     description: String!,
-    create_date: Date! @now
+    create_time: Date! @now
 }
