@@ -2,7 +2,7 @@
 
 type Mention implements MentionEdge 
 @nodes(tail:"Page", head:"User")
-@properties(binding: false, persistent: true, consumer: true, multiplicable: false, gettable: false)
+@properties(binding: false, persistent: true, consumer: true, multiplicable: false)
 @labels(headSingular:"mention", headPlural: "mentions", tailSingular: "notification", tailPlural: "notifications")
 {
     id: ID!

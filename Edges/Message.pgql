@@ -2,8 +2,13 @@
 
 type Message implements MentionEdge 
 @nodes(tail:"User", head:"User")
-@properties(binding: false, persistent: true, consumer: false, multiplicable: true, gettable: true)
-@labels(headSingular:"messageRecipient", headPlural: "messageRecipients", tailSingular: "messageSender", tailPlural: "messageSenders")
+@properties(binding: false, persistent: true, consumer: false, multiplicable: true)
+@labels(
+    headSingular:"messageRecipient", headPlural: "messageRecipients", 
+    tailSingular: "messageSender", tailPlural: "messageSenders",
+    headCallableSingular: "incomingMessage", headCallablePlural: "incomingMessages",
+    tailCallableSingular: "sentMessage", tailCallablePlural: "sentMessages
+)
 {
     id: ID!,
     content: String! @constraints(maxLength: 255), # twitter no longer has a limit on the characters, but we keep it for scalability.

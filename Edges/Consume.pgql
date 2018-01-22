@@ -2,7 +2,7 @@
 
 type Consume implements ReadEdge 
 @nodes(head:"User, Page, Group", tail:"User")
-@properties(binding: false, persistent: true, consumer: true, formative: false, multiplicable: true, gettable: false)
+@properties(binding: false, persistent: true, consumer: true, formative: false, multiplicable: true)
 @labels(headSingular:"read", headPlural: "reads", tailSingular: "reader", tailPlural: "readers")
 {
     id: ID!
