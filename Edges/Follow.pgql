@@ -2,7 +2,7 @@
 
 type Follow implements SubscribeEdge 
 @nodes(head:"User", tail:"User")
-@properties(binding: false, persistent: true, consumer: true, formative: false, multiplicable: false)
+@properties(binding: false, persistent: true, consumer: true, formative: false, multiplicable: false, gettable: false)
 @labels(headSingular:"follow", headPlural: "follows", tailSingular: "follower", tailPlural: "followers")
 {
     id: ID!
