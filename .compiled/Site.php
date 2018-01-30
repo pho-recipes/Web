@@ -38,8 +38,8 @@ class Site extends Foundation\AbstractGraphDP {
 }
 
 /*****************************************************
- * Timestamp: 1517321555
- * Size (in bytes): 1461
- * Compilation Time: 73
- * da2323e3f623fb9792b0139f9bc02fd2
+ * Timestamp: 1517326070
+ * Size (in bytes): 1462
+ * Compilation Time: 100
+ * dd02a34462e7a5b31b787431dd348045
  ******************************************************/
