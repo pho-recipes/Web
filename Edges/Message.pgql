@@ -8,4 +8,5 @@ type Message implements MentionEdge
     id: ID!,
     content: String! @constraints(maxLength: 255), # twitter no longer has a limit on the characters, but we keep it for scalability.
     sent_time: Date! @now
+    is_read: Boolean @default(Boolean: false)
 }
