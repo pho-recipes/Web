@@ -45,8 +45,8 @@ class Page extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1517326070
- * Size (in bytes): 2161
- * Compilation Time: 100
- * 484e5b4c7d4dc308b142865402b44f60
+ * Timestamp: 1517326706
+ * Size (in bytes): 2160
+ * Compilation Time: 12
+ * 371192a5ce42c96fe345c73c28b2d85f
  ******************************************************/
