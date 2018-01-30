@@ -7,7 +7,7 @@ type Message implements MentionEdge
     headSingular:"messageRecipient", headPlural: "messageRecipients", 
     tailSingular: "messageSender", tailPlural: "messageSenders",
     headCallableSingular: "incomingMessage", headCallablePlural: "incomingMessages",
-    tailCallableSingular: "sentMessage", tailCallablePlural: "sentMessages
+    tailCallableSingular: "sentMessage", tailCallablePlural: "sentMessages"
 )
 {
     id: ID!,
