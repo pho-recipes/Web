@@ -7,7 +7,7 @@ type Comment implements SubscribeEdge
     headSingular:"commentedPage", headPlural: "commentedPages", 
     tailSingular: "commenter", tailPlural: "commenters",
     headCallableSingular: "comment", headCallablePlural: "comments",
-    tailCallableSingular: "comment", tailCallablePlural: "comments
+    tailCallableSingular: "comment", tailCallablePlural: "comments"
 )
 {
     id: ID!,
