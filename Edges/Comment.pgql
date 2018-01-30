@@ -3,7 +3,12 @@
 type Comment implements SubscribeEdge 
 @nodes(head:"Page", tail:"User")
 @properties(binding: false, persistent: true, consumer: false, multiplicable: true)
-@labels(headSingular:"commentedPage", headPlural: "commentedPages", tailSingular: "commenter", tailPlural: "commenters")
+@labels(
+    headSingular:"commentedPage", headPlural: "commentedPages", 
+    tailSingular: "commenter", tailPlural: "commenters",
+    headCallableSingular: "comment", headCallablePlural: "comments",
+    tailCallableSingular: "comment", tailCallablePlural: "comments
+)
 {
     id: ID!,
     content: String! @constraints(maxLength: 255),
