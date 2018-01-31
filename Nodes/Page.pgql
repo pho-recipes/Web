@@ -10,5 +10,5 @@ type Page implements ObjectNode
 {
     id: ID!,
     create_time: Date! @now
-    url: String!
+    url: String! @unique
 }
