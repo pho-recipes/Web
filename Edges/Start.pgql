@@ -1,0 +1,12 @@
+# pho-graphql-v1
+
+type Start implements WriteEdge 
+@nodes(head:"Thread", tail:"User")
+@properties(binding: true, persistent: true, consumer: true, formative: true, multiplicable: false)
+@labels(
+    headSingular:"thread", headPlural: "threads", 
+    tailSingular: "author", tailPlural: "authors"
+)
+{
+    id: ID!
+}
