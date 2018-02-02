@@ -25,7 +25,7 @@ class Page extends Foundation\AbstractObjectDP {
     const DEFAULT_MOD = 0x0f754;
     const DEFAULT_MASK = 0xfffff;
 
-    const FIELDS = "{\"create_time\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":true,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"url\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":true,\"index\":false}}}";
+    const FIELDS = "{\"create_time\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":true,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"url\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":\"url\"},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":true,\"index\":false}}}";
 
     public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Kernel\Foundation\AbstractActor $actor, \Pho\Lib\Graph\GraphInterface $graph , string $url)
     {
@@ -43,8 +43,8 @@ class Page extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1517559664
- * Size (in bytes): 1998
- * Compilation Time: 12
- * 7715aaf3450999d50b450e2901dabd43
+ * Timestamp: 1517562240
+ * Size (in bytes): 2001
+ * Compilation Time: 13
+ * 87d371fe5095de55d5d8be4ca2094ef6
  ******************************************************/
