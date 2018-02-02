@@ -9,5 +9,6 @@ type Thread implements ObjectNode
 {
     id: ID!,
     create_time: Date! @now
+    title: String! @constraints(maxLength:80),
     content: String!
 }
