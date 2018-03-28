@@ -10,4 +10,5 @@ type Page implements ObjectNode
     id: ID!,
     create_time: Date! @now
     url: String! @unique @constraints(format: "url")
+    title: String
 }
