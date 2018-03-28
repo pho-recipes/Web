@@ -25,9 +25,9 @@ class Page extends Foundation\AbstractObjectDP {
     const DEFAULT_MOD = 0x0f754;
     const DEFAULT_MASK = 0xfffff;
 
-    const FIELDS = "{\"create_time\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":true,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"url\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":\"url\"},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":true,\"index\":false}}}";
+    const FIELDS = "{\"create_time\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":true,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}},\"url\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":\"url\"},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":true,\"index\":false}},\"title\":{\"constraints\":{\"minLength\":null,\"maxLength\":null,\"id\":null,\"regex\":null,\"greaterThan\":null,\"lessThan\":null,\"format\":null},\"directives\":{\"sha1\":false,\"md5\":false,\"now\":false,\"default\":\"|_~_~NO!-!VALUE!-!SET~_~_|\",\"unique\":false,\"index\":false}}}";
 
-    public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Kernel\Foundation\AbstractActor $actor, \Pho\Lib\Graph\GraphInterface $graph , string $url)
+    public function __construct(\Pho\Kernel\Kernel $kernel, \Pho\Kernel\Foundation\AbstractActor $actor, \Pho\Lib\Graph\GraphInterface $graph , string $url, ?string $title)
     {
         $this->registerIncomingEdges(UserOut\Comment::class);
         $this->registerIncomingEdges(UserOut\Star::class);
@@ -36,6 +36,7 @@ class Page extends Foundation\AbstractObjectDP {
         parent::__construct($kernel, $actor, $graph);
                 $this->setCreateTime(time(), true);
         $this->setUrl($url, true);
+        $this->setTitle($title, true);
 
         $this->persist();
     }
@@ -43,8 +44,8 @@ class Page extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1521829147
- * Size (in bytes): 2001
- * Compilation Time: 94
- * 4435398103dfbf42de0963764734d3a2
+ * Timestamp: 1522199143
+ * Size (in bytes): 2343
+ * Compilation Time: 76
+ * b19f923e9ca0d6360cc8ce8fec4b47e4
  ******************************************************/
