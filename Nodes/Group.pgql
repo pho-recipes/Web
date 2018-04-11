@@ -8,6 +8,6 @@ type Group implements GraphNode
     id: ID,
     title: String! @constraints(maxLength:80),
     description: String!,
-    cover: String @constraints(format:"url"),
+    cover: String @constraints(format:"url") @default(String: ""),
     create_time: Date! @now
 }
