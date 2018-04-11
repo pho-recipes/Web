@@ -1,12 +1,13 @@
 # pho-graphql-v1
 
-type Group implements GraphNode 
+type Group implements GraphNode
 @edges(in:"User:Create, User:Consume")
 @permissions(mod: "0x1f751", mask: "0xff999") # people outside can't read.
-@properties(expires: 0, editable: true, volatile: false, revisionable: false) 
+@properties(expires: 0, editable: true, volatile: false, revisionable: false)
 {
     id: ID,
     title: String! @constraints(maxLength:80),
     description: String!,
+    url: String! @constraints(format: "url"),
     create_time: Date! @now
 }
