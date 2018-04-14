@@ -5,8 +5,8 @@ type Start implements WriteEdge
 @properties(binding: true, persistent: true, consumer: true, formative: true, multiplicable: false)
 @labels(
     headSingular:"thread", headPlural: "threads", 
-    tailSingular: "author", tailPlural: "authors"
-    feedSimple: "%tail.username% asks \"%head.title%\""
+    tailSingular: "author", tailPlural: "authors",
+    feedSimple: "%tail.username% asks %head.title%",
     feedAggregated: "%tail.username% started new threads"
 )
 {
