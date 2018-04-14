@@ -8,7 +8,7 @@ type Comment implements SubscribeEdge
     tailSingular: "commenter", tailPlural: "commenters",
     headCallableSingular: "comment", headCallablePlural: "comments",
     tailCallableSingular: "comment", tailCallablePlural: "comments",
-    feedSimple: "%tail.username% commented on <a href=\"%head.url%\">%empty(head.title)?head.url:head.title%</a>"
+    feedSimple: "%tail.username% commented on <a href=\"%head.url%\">%empty(head.title)?head.url:head.title%</a>",
     feedAggregated: "%tail.username% commented on %count(head)% pages"
 )
 {
