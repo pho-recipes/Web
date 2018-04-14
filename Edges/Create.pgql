@@ -3,7 +3,14 @@
 type Create implements WriteEdge 
 @nodes(head:"Group", tail:"User")
 @properties(binding: true, persistent: true, consumer: true, formative: true, multiplicable: false)
-@labels(headSingular:"group", headPlural: "groups", tailSingular: "creator", tailPlural: "creators")
+@labels(
+    headSingular:"group", 
+    headPlural: "groups", 
+    tailSingular: "creator", 
+    tailPlural: "creators",
+    feedSimple: "%tail.username% created a new group called \"%head.title%\""
+    feedAggregated: "%tail.username% created new groups"
+)
 {
     id: ID!
 }
