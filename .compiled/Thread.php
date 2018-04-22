@@ -41,13 +41,14 @@ class Thread extends Foundation\AbstractObjectDP {
         $this->setContent($content, true);
 
         $this->persist();
+        $this->context()->emit("particle.formed", [$this]);
     }
 
 }
 
 /*****************************************************
- * Timestamp: 1523676762
- * Size (in bytes): 2361
+ * Timestamp: 1524372087
+ * Size (in bytes): 2421
  * Compilation Time: 13
- * 3c39b29798fe1479a0e23d2cfec16d59
+ * eedbe12f5568b25257e87e523ef55934
  ******************************************************/

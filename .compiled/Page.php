@@ -42,13 +42,14 @@ class Page extends Foundation\AbstractObjectDP {
         $this->setTitle($title, true);
 
         $this->persist();
+        $this->context()->emit("particle.formed", [$this]);
     }
 
 }
 
 /*****************************************************
- * Timestamp: 1523676762
- * Size (in bytes): 2404
+ * Timestamp: 1524372087
+ * Size (in bytes): 2464
  * Compilation Time: 13
- * 544cbb5cba49d3194fa204961bf817b0
+ * 57a3dc878f6185d4b670081c04e2b3fe
  ******************************************************/

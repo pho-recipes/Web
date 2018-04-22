@@ -36,13 +36,14 @@ class Site extends Foundation\AbstractGraphDP {
                 $this->setFounder($founder, true);
 
         $this->persist();
+        $this->context()->emit("particle.formed", [$this]);
     }
 
 }
 
 /*****************************************************
- * Timestamp: 1523676762
- * Size (in bytes): 1522
+ * Timestamp: 1524372087
+ * Size (in bytes): 1582
  * Compilation Time: 14
- * 468148452f39d311b3d344a373d5a23d
+ * b7e128c15974d288e9eefc901c22564b
  ******************************************************/
