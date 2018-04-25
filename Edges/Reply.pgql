@@ -7,7 +7,9 @@ type Reply implements SubscribeEdge
     headSingular:"thread", headPlural: "threads", 
     tailSingular: "author", tailPlural: "authors",
     headCallableSingular: "reply", headCallablePlural: "replies",
-    tailCallableSingular: "threadReply", tailCallablePlural: "threadReplies"
+    tailCallableSingular: "threadReply", tailCallablePlural: "threadReplies",
+    feedSimple: "[%tail.username%|%tail.id%] replied the thread [%head.title%|%head.id%]",
+    feedAggregated: "%tail.username% replied some threads"
 )
 {
     id: ID!

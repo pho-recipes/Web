@@ -8,7 +8,7 @@ type Create implements WriteEdge
     headPlural: "groups", 
     tailSingular: "creator", 
     tailPlural: "creators",
-    feedSimple: "%tail.username% created a new group called %head.title%",
+    feedSimple: "[%tail.username%|%tail.id%] created a new group called [%head.title%|%head.id%]",
     feedAggregated: "%tail.username% created new groups"
 )
 {

@@ -6,7 +6,7 @@ type Start implements WriteEdge
 @labels(
     headSingular:"thread", headPlural: "threads", 
     tailSingular: "author", tailPlural: "authors",
-    feedSimple: "%tail.username% asks %head.title%",
+    feedSimple: "[%tail.username%|%tail.id%] started a new thread [%head.title%|%head.id%]",
     feedAggregated: "%tail.username% started new threads"
 )
 {
