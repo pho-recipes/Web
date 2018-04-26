@@ -30,7 +30,7 @@ class Follow extends Foundation\ActorOut\Subscribe {
     const HEAD_CALLABLE_LABEL = "";
     const HEAD_CALLABLE_LABELS = "";
 
-    const FEED_SIMPLE_LABEL = "%tail.username% followed %head.username%";
+    const FEED_SIMPLE_LABEL = "[%tail.username%|%tail.id%] followed [%head.username%|%head.id%]";
     const FEED_AGGREGATED_LABEL = "%tail.username% followed %head.username%";
     
 
@@ -58,7 +58,7 @@ class FollowPredicate extends Foundation\ActorOut\SubscribePredicate
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 1592
+ * Size (in bytes): 1616
  * Compilation Time: 8
- * e94d8bd684ec3a9c242064b54cee8f3f
+ * c286ef8de42a6ed86457561fba31fedc
  ******************************************************/

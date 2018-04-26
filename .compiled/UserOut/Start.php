@@ -30,7 +30,7 @@ class Start extends Foundation\ActorOut\Write {
     const HEAD_CALLABLE_LABEL = "";
     const HEAD_CALLABLE_LABELS = "";
 
-    const FEED_SIMPLE_LABEL = "%tail.username% asks %head.title%";
+    const FEED_SIMPLE_LABEL = "[%tail.username%|%tail.id%] started a new thread [%head.title%|%head.id%]";
     const FEED_AGGREGATED_LABEL = "%tail.username% started new threads";
     
 
@@ -61,7 +61,7 @@ class StartNotification extends Foundation\ActorOut\WriteNotification
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 1634
+ * Size (in bytes): 1674
  * Compilation Time: 9
- * 448c42e528c2e140b418c67c220dbd0a
+ * b486d0349d89da4b038417528fe9b6cd
  ******************************************************/

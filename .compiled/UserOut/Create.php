@@ -30,7 +30,7 @@ class Create extends Foundation\ActorOut\Write {
     const HEAD_CALLABLE_LABEL = "";
     const HEAD_CALLABLE_LABELS = "";
 
-    const FEED_SIMPLE_LABEL = "%tail.username% created a new group called %head.title%";
+    const FEED_SIMPLE_LABEL = "[%tail.username%|%tail.id%] created a new group called [%head.title%|%head.id%]";
     const FEED_AGGREGATED_LABEL = "%tail.username% created new groups";
     
 
@@ -61,7 +61,7 @@ class CreateNotification extends Foundation\ActorOut\WriteNotification
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 1657
- * Compilation Time: 7
- * bf2dfc6d00319a335660a65c95a9d353
+ * Size (in bytes): 1681
+ * Compilation Time: 8
+ * 502fc18fea9f2fa3bdbe6de2d8986fc7
  ******************************************************/
