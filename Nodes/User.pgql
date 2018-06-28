@@ -12,7 +12,7 @@ type User implements ActorNode
     id: ID!,
     username: String! @unique @constraints(regex: "/^[ _[:alnum:]]{1,36}$/u"),
     email: String! @unique @constraints(format: "email"),
-    password: String! @md5 @constraints(regex: "/^[0-9A-Za-z!@#$%_]{5,15}$/"),
+    password: String! @md5 @constraints(regex: "/^[0-9A-Za-z!@#$%_]{5,255}$/"),
     join_time: Date! @now,
     avatar: String @constraints(format: "url") @default(String: ""),
     birthday: Date @default(String: "01/15/1983"),
