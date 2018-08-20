@@ -14,5 +14,6 @@ type Comment implements SubscribeEdge
 {
     id: ID!,
     content: String! @constraints(maxLength: 255),
+    pending: Boolean @default(String: "false"),
     create_time: Date! @now
 }
