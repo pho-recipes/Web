@@ -5,5 +5,5 @@ type Site implements GraphNode
 {
     id: ID,
     founder: User!,
-    comments_moderated: Boolean @default(String: "false")
+    comments_moderated: Boolean @default(Boolean: false)
 }
