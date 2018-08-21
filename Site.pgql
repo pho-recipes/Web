@@ -4,5 +4,6 @@ type Site implements GraphNode
 @permissions(mod: "0x0f751", mask: "0xfffff") # people outside can't read.
 {
     id: ID,
-    founder: User!
+    founder: User!,
+    comments_moderated: Boolean @default(String: "false")
 }
