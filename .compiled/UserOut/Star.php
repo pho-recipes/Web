@@ -58,7 +58,7 @@ class StarPredicate extends Foundation\ActorOut\SubscribePredicate
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 1510
- * Compilation Time: 124
- * d0fdf50570fcb3b8ebe93ddc7e7b4e46
+ * Size (in bytes): 1509
+ * Compilation Time: 57
+ * 57c36c54418bebd54b7d57f7a54554e3
  ******************************************************/
