@@ -62,6 +62,6 @@ class StartNotification extends Foundation\ActorOut\WriteNotification
 /*****************************************************
  * Timestamp: 
  * Size (in bytes): 1675
- * Compilation Time: 59
- * 5d448cacaa1bc346a26ee71b2fc54983
+ * Compilation Time: 58
+ * 1a8d502a2568b5411dff0685d41cb722
  ******************************************************/
