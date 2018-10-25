@@ -59,7 +59,7 @@ class CommentPredicate extends Foundation\ActorOut\SubscribePredicate
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 2541
- * Compilation Time: 34
- * 9ad980b3eb18d0e3cd90c318e4383961
+ * Size (in bytes): 2542
+ * Compilation Time: 238
+ * d949f06b79dc5a95fbb4d458996eb48b
  ******************************************************/
