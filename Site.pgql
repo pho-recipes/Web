@@ -5,6 +5,8 @@ type Site implements GraphNode
 {
     id: ID,
     founder: User!,
+    default_theme: String @default(String: "light"),
+    default_color: String @default(String: ""),
     comments_moderated: Boolean @default(Boolean: false),
     comments_anonymous: Boolean @default(Boolean: false)
 }
