@@ -59,7 +59,7 @@ class ReplyPredicate extends Foundation\ActorOut\SubscribePredicate
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 2255
- * Compilation Time: 278
- * 46f78148046dde23e9cc8f1489c8cd98
+ * Size (in bytes): 2254
+ * Compilation Time: 53
+ * 8c2ac8fdd40c86f1df6c5394b25ed5be
  ******************************************************/
