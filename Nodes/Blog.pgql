@@ -11,5 +11,5 @@ type Blog implements ObjectNode
     title: String! @constraints(maxLength: 255)
     content: String!
     create_time: Date! @now   
-    is_draft: Bool @default(Bool: true)
+    is_draft: Boolean @default(Boolean: true)
 }
