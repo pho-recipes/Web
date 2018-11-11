@@ -8,7 +8,8 @@ type Page implements ObjectNode
 @properties(editable: true, volatile: false, revisionable: false)
 {
     id: ID!,
-    create_time: Date! @now
-    url: String! @unique @constraints(format: "url")
-    title: String
+    title: String! @constraints(maxLength: 255)
+    content: String!
+    create_time: Date! @now   
+    is_draft: Bool @default(Bool: true)
 }
