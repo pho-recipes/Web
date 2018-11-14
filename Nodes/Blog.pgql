@@ -10,6 +10,7 @@ type Blog implements ObjectNode
     id: ID!,
     title: String! @constraints(maxLength: 255)
     content: String!
-    create_time: Date! @now   
-    is_draft: Boolean @default(Boolean: true)
+    create_time: Date! @now
+    last_edit_time: Date @now
+    publish_time: Date @default(Int: 0)
 }
