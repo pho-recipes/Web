@@ -12,5 +12,5 @@ type Blog implements ObjectNode
     content: String!
     create_time: Date! @now
     last_edit_time: Date @now
-    publish_time: Date @default(Int: 0)
+    publish_time: Date @default(String: "0")
 }
