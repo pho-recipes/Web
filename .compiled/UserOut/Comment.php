@@ -30,7 +30,7 @@ class Comment extends Foundation\ActorOut\Subscribe {
     const HEAD_CALLABLE_LABEL = "comment";
     const HEAD_CALLABLE_LABELS = "comments";
 
-    const FEED_SIMPLE_LABEL = "[%tail.username%|%tail.id%] commented on [%head.url%|%head.id%]";
+    const FEED_SIMPLE_LABEL = "[%tail.username%|%tail.id%] commented on an item";
     const FEED_AGGREGATED_LABEL = "%tail.username% commented on %count(head)% pages";
     
 
@@ -59,7 +59,7 @@ class CommentPredicate extends Foundation\ActorOut\SubscribePredicate
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 2579
- * Compilation Time: 34
- * a86917ba3f2aff871ea8f3f8d3b7ceea
+ * Size (in bytes): 2565
+ * Compilation Time: 183
+ * 9963c242906aba4fa769c4fece4fc182
  ******************************************************/
