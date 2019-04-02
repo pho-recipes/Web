@@ -47,8 +47,8 @@ class Thread extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1547537606
+ * Timestamp: 1554210710
  * Size (in bytes): 2422
- * Compilation Time: 100
- * d04d8e65d7e5caa115726af033c9c9b8
+ * Compilation Time: 339
+ * 9d59d39dc4d1496acfb7d44ca1e662d7
  ******************************************************/

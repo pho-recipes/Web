@@ -50,8 +50,8 @@ class Blog extends Foundation\AbstractObjectDP {
 }
 
 /*****************************************************
- * Timestamp: 1547537606
- * Size (in bytes): 3182
- * Compilation Time: 92
- * ceef24301eb6beb06336e9d7d5b20e97
+ * Timestamp: 1554210710
+ * Size (in bytes): 3183
+ * Compilation Time: 332
+ * 9af2bd6e2d2f219fb73000177f36dbe3
  ******************************************************/
