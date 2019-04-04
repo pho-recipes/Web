@@ -62,7 +62,7 @@ class ReplyNotification extends Foundation\ActorOut\SubscribeNotification
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 2333
- * Compilation Time: 281
- * 6862affb3ac6f9d2cd861576c727dcaa
+ * Size (in bytes): 2332
+ * Compilation Time: 57
+ * 816253591f01c354421cb0a2e7c05a64
  ******************************************************/
