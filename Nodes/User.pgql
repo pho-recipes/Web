@@ -20,5 +20,5 @@ type User implements ActorNode
     is_editor: Boolean @default(Boolean: false),
     custom_field1: String @default(String: ""),
     custom_field2: String @default(String: ""),
-    custom_field3: String @default(String: ""),
+    custom_field3: String @default(String: "")
 }
