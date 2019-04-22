@@ -17,5 +17,8 @@ type User implements ActorNode
     avatar: String @constraints(format: "url") @default(String: ""),
     birthday: Date @default(String: "01/15/1983"),
     about: String @constraints(maxLength: 255) @default(String: ""),
-    is_editor: Boolean @default(Boolean: false)
+    is_editor: Boolean @default(Boolean: false),
+    custom_field1: String @default(String: ""),
+    custom_field2: String @default(String: ""),
+    custom_field3: String @default(String: ""),
 }
