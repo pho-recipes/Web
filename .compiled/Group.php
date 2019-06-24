@@ -47,8 +47,8 @@ class Group extends Foundation\AbstractGraphDP {
 }
 
 /*****************************************************
- * Timestamp: 1555904958
+ * Timestamp: 1561344996
  * Size (in bytes): 2700
- * Compilation Time: 94
- * 532ee511a916c7f3d7cf60b9f1dfd451
+ * Compilation Time: 16
+ * ea75901f1b82e1520476decf9b8381cf
  ******************************************************/
