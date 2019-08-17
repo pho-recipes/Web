@@ -61,7 +61,7 @@ class FollowNotification extends Foundation\ActorOut\SubscribeNotification
 
 /*****************************************************
  * Timestamp: 
- * Size (in bytes): 1695
- * Compilation Time: 9
- * 7d6da891dee78f7c5916fbbd1d765511
+ * Size (in bytes): 1696
+ * Compilation Time: 39
+ * 7592994ae85106372a2ed6219c1ac122
  ******************************************************/
