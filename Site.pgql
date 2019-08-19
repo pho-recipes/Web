@@ -14,5 +14,6 @@ type Site implements GraphNode
     custom_field2: String! @default(String: ""),
     custom_field2_must: Boolean! @default(Boolean: false),
     custom_field3: String! @default(String: ""),
-    custom_field3_must: Boolean! @default(Boolean: false)
+    custom_field3_must: Boolean! @default(Boolean: false),
+    read_only: Boolean @default(Boolean: false)
 }
