@@ -1,0 +1,14 @@
+# pho-graphql-v1
+
+type Anonymous implements ActorNode 
+@edges(
+    in:"User:Consume", 
+    out:"Star, Comment"
+)
+@permissions(mod: "0x00000", mask: "0xfffff") 
+@properties(editable: false, volatile: false, revisionable: false)
+{
+    id: ID!,
+    join_time: Date! @now,
+    ip: String! @unique
+}
