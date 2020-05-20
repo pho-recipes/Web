@@ -62,6 +62,6 @@ class PostNotification extends Foundation\ActorOut\WriteNotification
 /*****************************************************
  * Timestamp: 
  * Size (in bytes): 1643
- * Compilation Time: 6
- * 36474f15a1ffa9ec34e45571217285e4
+ * Compilation Time: 5
+ * fdf253e88eb04f34178bea8b801c22df
  ******************************************************/
